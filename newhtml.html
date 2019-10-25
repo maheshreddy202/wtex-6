@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .title{
+                font-size: 30px;
+                font-family: bold;
+                color: white;
+            }
+            .cloth-type{
+                float: left;
+            }
+            .drop-down{
+                float: left;
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="cloth.jpg" alt="image not found" width="500" height="300">
+        <div class="title">Choose your shirt option</div>
+        <div class="cloth-type">
+        <img src="t-shirt.jpg" alt="image not found" width="400" height="400">
+        <img src="hoddy.jpg" alt="image not found" width="400" height="400"> 
+        </div>
+        <form action="second.phpb" method="post">
+            <p>clothing item<sup><font color="red">*</font></sup></p>
+            <input type="radio" name="clothing item" value="womens shirt">womens shirt<br>
+            <input type="radio" name="clothing item" value="mens shirt">mens shirt<br>
+            <input type="radio" name="clothing item" value="childrens shirt">childerns shirt<br>
+            <div class="drop-down">
+                <p>quantity<sup><font color="red">*</font></sup></p>
+                <select name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <p>colour<sup><font color="red">*</font></sup></p>
+                 <select name="colour">
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="green">green</option>
+                    <option value="pink">pink</option>
+                    <option value="black">black</option>
+                </select>
+                <p>size<sup><font color="red">*</font></sup></p>
+                 <select name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+            <input type="submit" name="next" value="GetSelectedValues">
+        </form>
+    </body>
+</html>
+
